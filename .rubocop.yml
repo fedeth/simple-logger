@@ -1,0 +1,9 @@
+Layout/EmptyLines:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+AllCops:
+  Exclude:
+  #  - 'spec/**/*'
