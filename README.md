@@ -20,7 +20,7 @@ Currently, the Simple Logger can parse only text files with the following syntax
 $website_path $pseudo_ip_address
 
 $website_path format: {[a-z0-9/_]{1,}}
-$pseudo_ip_address format: {[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
+$pseudo_ip_address format: {[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}}
 ```
 ## The idea behind
 - **LogLine**: it is responsible for preserve the original line of text, and after validations respond to _ip_ and _url_ messages.
