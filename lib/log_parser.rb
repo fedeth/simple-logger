@@ -11,7 +11,7 @@ class LogParser
   attr_accessor :entries
 
   def initialize(file_path, entries_class: Links, log_line_class: LogLine)
-    raise MissingFileError unless File.file?(file_path)
+    raise MissingFileError, 'File not found, did you mispell it?' unless File.file?(file_path)
 
     log_lines = []
     File.foreach(file_path) do |line|
